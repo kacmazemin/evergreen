@@ -1,6 +1,7 @@
-+++
-title = "About Me"
-+++
+---
+title: "About Me"
+layout: "about"
+---
 
 ## Mehmet Emin Kaçmaz
 
@@ -21,8 +22,3 @@ I began my professional journey by developing my own projects, and over the year
 
 - **Computer Instructor** — Elazığ Vali Osman Aydın Youth Center (2012–2015)
 - **Gold Award** — The Duke of Edinburgh's International Award (2012–2015)
-
-### Get in Touch
-
-- [LinkedIn](https://www.linkedin.com/in/kacmazemin/)
-- [GitHub](https://github.com/kacmazemin)

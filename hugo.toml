@@ -1,74 +1,76 @@
 baseURL = 'https://kacmazemin.github.io/evergreen/'
-languageCode = 'en'
-title = 'Evergreen'
+theme = "mana"
+defaultContentLanguage = "en"
 enableEmoji = true
 
-[module]
-  [[module.imports]]
-    path = "github.com/kaiiiz/hugo-theme-monochrome"
-
 [pagination]
-  pagerSize = 10
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[params]
-  navbar_title = "Evergreen"
-  hide_navbar_on_scroll = true
-  footer = "Mehmet Emin Kaçmaz"
-  author = "Mehmet Emin Kaçmaz"
-  color_scheme = "dark"
-  navbar_width = "wide"
-
-  enable_zooming_js = true
-  enable_header_anchor = true
-  enable_toc = true
-  enable_site_search = true
-  enable_math = false
-
-  enable_open_graph = true
-  enable_twitter_cards = true
-
-  enable_collapsible_toc = false
-  toc_position = "right"
-
-  [params.list_layout]
-    enable_group_by_year = true
-    enable_show_date = true
-    enable_pagination = false
-
-  [params.syntax_highlight]
-    lib = "builtin"
-    [params.syntax_highlight.builtin]
-      enable_code_copy = true
-
-[[menus.navbar]]
-  identifier = "about"
-  name = "About"
-  url = "/about/"
-  weight = 1
-
-[[menus.navbar]]
-  identifier = "notes"
-  name = "Notes"
-  url = "/notes/"
-  weight = 2
-
-[[menus.navbar]]
-  identifier = "tech"
-  name = "Tech"
-  url = "/tech/"
-  weight = 3
+  pageSize = 10
 
 [markup]
-  [markup.highlight]
-    style = "monokai"
-    noClasses = true
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+    ordered = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+    style = "catppuccin-macchiato"
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  description = "A digital garden — notes, ideas, and technical references"
+  author = "Mehmet Emin Kaçmaz"
+  heroTitleLine1 = "EVERGREEN"
+  heroTitleLine2 = "A Digital Garden"
+  footerText = "Built with Hugo and Mana theme"
+
+  [params.social]
+    github = "https://github.com/kacmazemin"
+    linkedin = "https://www.linkedin.com/in/kacmazemin"
+
+  [params.buyMeACoffee]
+    enabled = false
+
+  [params.codeHighlight]
+    darkTheme = "catppuccin-macchiato"
+    lightTheme = "catppuccin-frappe"
+
+  [params.copyright]
+    startYear = 2026
+    owner = "Mehmet Emin Kaçmaz"
+
+  [params.admonitions]
+    alertStyle = "favicon"
+
+[[menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "Posts"
+  pageRef = "/posts"
+  weight = 20
+
+[[menus.main]]
+  name = "Tags"
+  pageRef = "/tags"
+  weight = 30
+
+[[menus.main]]
+  name = "About"
+  url = "/about/"
+  weight = 40
