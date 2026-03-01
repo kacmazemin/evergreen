@@ -4,6 +4,8 @@ backend:
   name: github
   repo: kacmazemin/evergreen
   branch: main
+  auth_type: pkce
+  app_id: Ov23liUlhQ1TWH4DJy7W
 
 media_folder: static/images
 public_folder: /images
