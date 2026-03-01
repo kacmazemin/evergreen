@@ -1,21 +1,55 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://kacmazemin.github.io/evergreen/'
 languageCode = 'en-us'
-title = 'MyConf'
+title = 'Evergreen'
 
 [module]
   [[module.imports]]
-    path = "github.com/McShelby/hugo-theme-relearn"
+    path = "github.com/panr/hugo-theme-terminal/v4"
 
 [params]
-  themeVariant = "relearn-dark"
-  disableLandingPageButton = true
-  breadcrumbSeparator = ">"
-  editURL = ""
-  showVisitedLinks = true
-  disableAsideToc = false
+  contentTypeName = "posts"
+  themeColor = "green"
+  showMenuItems = 3
+  fullWidthTheme = false
+  centerTheme = true
+  autoCover = true
+  showLastUpdated = false
 
-  [params.search]
-    disable = false
+[params.twitter]
+  creator = ""
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Evergreen"
+    subtitle = "A digital garden"
+    owner = "Mehmet Emin Kaçmaz"
+    keywords = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "evergreen"
+      logoHomeLink = "/"
+
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/about"
+      weight = 1
+
+    [[languages.en.menu.main]]
+      identifier = "notes"
+      name = "Notes"
+      url = "/notes"
+      weight = 2
+
+    [[languages.en.menu.main]]
+      identifier = "tech"
+      name = "Tech"
+      url = "/tech"
+      weight = 3
 
 [outputs]
   home = ["HTML", "RSS"]

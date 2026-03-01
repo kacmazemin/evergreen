@@ -1,8 +1,7 @@
 +++
-archetype = "home"
-title = "MyConf"
+title = "Welcome"
 +++
 
-Welcome to **MyConf** — your personal knowledge wiki.
+Welcome to my digital garden — a growing collection of notes, ideas, and technical references.
 
-{{% children description="true" %}}
+Browse around using the menu above, or check out the latest posts below.

@@ -1,36 +1,29 @@
 +++
 title = "Getting Started"
-tags = ["setup", "hugo"]
-weight = 1
+tags = ["hugo", "setup"]
 +++
 
 ## Prerequisites
 
-- [Hugo Extended](https://gohugo.io/installation/) (v0.112+)
+- [Hugo Extended](https://gohugo.io/getting-started/installing/) (v0.128+)
 - [Go](https://go.dev/dl/) (for Hugo modules)
 - [Git](https://git-scm.com/)
 
 ## Local Development
 
-Start the development server with drafts enabled:
-
 ```bash
 hugo server -D
 ```
 
-Open [http://localhost:1313](http://localhost:1313) in your browser.
+Open `http://localhost:1313/evergreen/` in your browser.
 
 ## Creating Content
 
-### New journal entry
-
 ```bash
-hugo new notes/YYYY-MM-DD-title.md
-```
+# New note
+hugo new notes/my-note.md
 
-### New tech doc
-
-```bash
+# New tech doc
 hugo new tech/my-doc.md
 ```
 
@@ -38,36 +31,12 @@ hugo new tech/my-doc.md
 
 ```
 content/
-  _index.md          # Homepage
-  notes/             # Journal & personal notes
-    _index.md        # Section landing page
-  tech/              # Technical documentation
-    _index.md        # Section landing page
-```
-
-## Useful Shortcodes
-
-### Notice boxes
-
-```markdown
-{{%/* notice style="tip" */%}}
-A helpful tip.
-{{%/* /notice */%}}
-```
-
-### Mermaid diagrams
-
-````markdown
-```mermaid
-graph LR
-  A[Write Markdown] --> B[Hugo Builds] --> C[Static Site]
-```
-````
-
-### Expand/collapse sections
-
-```markdown
-{{%/* expand title="Click to expand" */%}}
-Hidden content here.
-{{%/* /expand */%}}
+├── _index.md          # Homepage
+├── about.md           # About page
+├── notes/             # Notes & journal
+│   ├── _index.md
+│   └── *.md
+└── tech/              # Tech docs
+    ├── _index.md
+    └── *.md
 ```

@@ -1,27 +1,19 @@
 +++
 title = "First Entry"
 date = 2026-03-01
-tags = ["journal", "getting-started"]
+tags = ["journal", "meta"]
 draft = false
-weight = 1
 +++
 
-This is the first journal entry in MyConf.
+This is the first entry in my digital garden. A place to collect thoughts, notes, and things I learn along the way.
 
 ## What is this?
 
-MyConf is a personal knowledge wiki built with [Hugo](https://gohugo.io/) and the [Relearn](https://mcshelby.github.io/hugo-theme-relearn/) theme. It provides:
+A personal knowledge base built with [Hugo](https://gohugo.io/) and the [Terminal](https://github.com/panr/hugo-theme-terminal) theme. Content is organized into:
 
-- Dark-mode wiki interface
-- Full-text search
-- Tag-based organization
-- Mermaid diagram support
-- Easy Markdown authoring
+- **Notes** — personal entries and journal
+- **Tech** — technical documentation and references
 
-## Creating new entries
+## How it works
 
-```bash
-hugo new notes/2026-03-01-my-finding.md
-```
-
-This will scaffold a new note from the `archetypes/notes.md` template.
+Content is written in Markdown with TOML front matter. Push to GitHub and it deploys automatically via GitHub Actions.

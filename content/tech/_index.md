@@ -1,6 +1,5 @@
 +++
-title = "Tech Docs"
-weight = 20
+title = "Tech"
 +++
 
-Technical documentation, guides, and reference material.
+Technical documentation and references.

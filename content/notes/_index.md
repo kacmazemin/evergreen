@@ -1,6 +1,5 @@
 +++
-title = "Notes & Journal"
-weight = 10
+title = "Notes"
 +++
 
-Personal notes, journal entries, and daily findings.
+Personal notes and journal entries.
